@@ -28,9 +28,10 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  console.log("Hola");
+  var lambda = str
+  return lambda
 }
-devolverString();
+devolverString("lambdaSchool");
 
 function suma(x, y) {
   // "x" e "y" son números
@@ -39,7 +40,7 @@ function suma(x, y) {
   suma2 = x + y
   return suma2;
 }
-sumarDosNumeros(3, 5);
+suma(3, 5);
 
 function resta(x, y) {
   // Resta "x" de "y" y devuelve el valor
@@ -47,7 +48,7 @@ function resta(x, y) {
   resta2 = x - y
   return resta2;
 }
-restarDosNumeros(3, 5);
+resta(3, 5);
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
@@ -55,7 +56,7 @@ function multiplica(x, y) {
   multiplica2 = x * y
   return multiplica2;
 }
-multiplicarDosNumeros(3, 5);
+multiplica(3, 5);
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
@@ -63,7 +64,7 @@ function divide(x, y) {
   divide2 = x / y
   return divide2
 }
-dividirDosNumeros(3, 5);
+divide(3, 5);
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
@@ -74,7 +75,7 @@ function sonIguales(x, y) {
   }
   return false;
 }
-sonIgualitos(3,3);
+sonIguales(3,3);
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -86,7 +87,7 @@ function tienenMismaLongitud(str1, str2) {
     return false
   }
 }
-tienenMismaLongitud2("Hola", "Casa")
+tienenMismaLongitud("Hola", "Casa")
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -110,7 +111,7 @@ function mayorQueCincuenta(num) {
     return false
   }
 }
-mayorQueCincuenta2(51)
+mayorQueCincuenta(51)
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
@@ -118,13 +119,13 @@ function obtenerResto(x, y) {
   var resto = x % y
   return resto
 }
-obtenerResto2(21, 5)
+obtenerResto(21, 5)
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 = 0){
+  if (num % 2 === 0) {
     return true
   } else {
     return false
@@ -136,13 +137,13 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 3 = 0){
+  if (num % 2 === 1) {
     return true
   } else {
     return false
   }
 }
-esImpar(9)
+esImpar(6)
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
@@ -164,7 +165,7 @@ elevarAlCubo(9)
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  Math.pow(num, exponent) = resultado
+  var resultado = Math.pow(num, exponent)
   return resultado
 }
 elevar(3, 5)
@@ -172,42 +173,45 @@ elevar(3, 5)
 function redondearNumero(num) {
   // Redondea "num" y devuélvelo
   // Tu código:
-  Math.round(num) = resultado
+  var resultado = Math.round(num)
   return resultado
 }
-redondearNumero(5,6)
+redondearNumero(5.6)
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba y devuélvelo
   // Tu código:
-  Math.ceil(num) = resultado
+  var resultado = Math.ceil(num)
   return resultado
 }
-redondearHaciaArriba(6,4)
+redondearHaciaArriba(6.4)
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  console.log("Hola mundo!")
+  var hola = str + "!"
+  return hola
 }
-agregarSimboloExclamacion(str)
+agregarSimboloExclamacion("Hello world")
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  console.log(nombre, apellido)
+  var soyHenry = (nombre + " " + apellido)
+  return soyHenry
 }
-combinarNombres("Facundo", "Pascale")
+combinarNombres("Hello ", "world")
 
 function obtenerSaludo(nombre) {
-  // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
+  // Toma la string "∫nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  console.log("Hola", nombre)
+  var hola = ("Hola " + nombre + "!")
+  return hola
 }
-obtenerSaludo("Facundo")
+obtenerSaludo("Martin")
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un cuadrado teniendo su altura y ancho
