@@ -81,17 +81,17 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero %3 === 0) {
+  if (numero %3 === 0 && numero %5 === 0) {
+    return "fizzbuzz"
+  } else if (numero %3 === 0) {
     return "fizz"
   } else if (numero %5 === 0) {
     return "buzz"
-  } else if (numero %3 === 0 && numero %5 === 0) {
-    return "fizzbuzz"
   } else {
     return numero
   }
 }
-fizzBuzz(5)
+fizzBuzz(15)
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -99,11 +99,16 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-for (var primo = numero   ; primo % primo === 0 && primo %1 ===0   ;primo++ ){
+if (numero === 0 || numero === 1) {
+  return false
+} for ( var x = 2 ; x < numero ; x++)
+  if (numero % x === 0){
+    return false
+  } {
   return true
 }
 }
-esPrimo(4)
+esPrimo(7)
 
 
 // No modificar nada debajo de esta línea
