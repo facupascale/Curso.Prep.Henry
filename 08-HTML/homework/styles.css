@@ -1,0 +1,29 @@
+body {
+  background-image: url("/Users/facupascale/Curso.Prep.Henry/08-HTML/demos/clase1/gatito.jpg");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.divClass {
+  text-align: center;
+}
+h1 {
+  color: blue;
+}
+img {
+  width: 400px;
+}
+#thirdDiv {
+  height: 600px;
+  width: 500px;
+  background-color: red;
+  padding: 50px;
+  border-color: blue;
+  border-style: inset;
+}
+#spanId {
+  font-size: 18px;
+  margin: 50px;
+
+}
